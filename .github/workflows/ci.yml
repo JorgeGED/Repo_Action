@@ -23,6 +23,8 @@ jobs:
 
       - name: Install Newman
         run: npm install -g newman
+        
+      - name: Fix audit  
         run: npm audit fix --force
 
       - name: Run Postman tests
