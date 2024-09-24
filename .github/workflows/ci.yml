@@ -23,19 +23,18 @@ jobs:
       - name: Install dependencies
         run: npm install
 
-<<<<<<< HEAD
-=======
-      - name: Fix Cypress permissions ## quitar?
-        run: chmod +x ./node_modules/.bin/cypress ##
 
->>>>>>> 903443aa6807d657dc0117d840cb15cee3ae880c
+     # - name: Fix Cypress permissions ## quitar?
+      #  run: chmod +x ./node_modules/.bin/cypress ##
+
+
       - name: Run Cypress tests
         run: npx cypress run
 
-      - name: Upload Cypress artifacts
-        uses: actions/upload-artifact@v3
-        with:
-          name: cypress-artifacts
-          path: |
-            cypress/screenshots
-            cypress/videos
+     # - name: Upload Cypress artifacts
+      #  uses: actions/upload-artifact@v3
+       # with:
+        #  name: cypress-artifacts
+         # path: |
+          #  cypress/screenshots
+           # cypress/videos
