@@ -22,9 +22,8 @@ jobs:
           node-version: '18'
 
       - name: Install Newman
-        run: 
-        npm install -g newman
-        npm audit fix --force
+        run: npm install -g newman
+        run: npm audit fix --force
 
       - name: Run Postman tests
         run: newman run "postman/Rick&Morty.postman_collection.json"
