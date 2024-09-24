@@ -18,7 +18,7 @@ jobs:
       - name: Set up Node.js
         uses: actions/setup-node@v2
         with:
-          node-version: '16' # antes 14 (funciona pero se raya)
+          node-version: '14' # antes 14 (funciona pero se raya)
 
       - name: Install dependencies
         run: npm install
