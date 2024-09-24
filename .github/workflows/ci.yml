@@ -19,13 +19,13 @@ jobs:
       - name: Set up Node.js
         uses: actions/setup-node@v2
         with:
-          node-version: '18'
+          node-version: '18' #cambio version 14 a 16 a 18
 
       - name: Install Newman
         run: npm install -g newman
-        
+
       - name: Fix audit  
-        run: npm audit fix --force
+        run: npm audit fix --force #forzamos para que no corte la ejecucion
 
       - name: Run Postman tests
         run: newman run "postman/Rick&Morty.postman_collection.json"
